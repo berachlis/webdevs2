@@ -53,7 +53,7 @@
               $("#output").append("<center><br><h2>Bus Times</h2></center>");
              
               $.each(data["bustime-response"]["prd"], function(i,v) {
-                  $("#output").append("<center><h3>Stop: " + v.stpnm  + "</h3><h3>Arrival Time: " + v.prdtm + "</h3>" + 
+                  $("#output").append("<center><h3>Stop: " + v.stpnm  + "</h3><h3>Predicted Arrival Time: " + v.prdtm + "</h3><h3>How many minutes do I have to wait? "+ v.prdctdn + " minutes" + "</h3>" + 
                    "</h3><br></center>");
               });
 
