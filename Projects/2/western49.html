@@ -10,16 +10,27 @@
       color: #29a329;
       font-family: Sans-serif;
     }
+    #submit{
+             background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: Sans-serif;
+    }
   </style>
 </head>
 <body>
   
-<center><h2>Select Southbound Bus Stop</h2></center>
+<center><h2>Select Northbound Bus Stop</h2></center>
 <hr>
 <center><h3>Select Direction</h3></center>
 <center><select name="Stops" id="stopChoice">
-  <option value="12527">Eastbound Addison #152</option>
-  <option value="12569">Westbound Addison #152</option>
+  <option value="8417">Northbound Western #49</option>
+  <option value="8195">Southbound Western #49</option>
 </select>
 
 <button type="button" onclick="myFunction();" >Search</button></center>
@@ -64,5 +75,7 @@
       
 </script>
  
+    <center><form action="https://preview.c9users.io/berachlis/webdevs2/Projects/2/Index.html"><input id="submit" type=submit value="Home"></form></center>
+
 </body>
 </html>
