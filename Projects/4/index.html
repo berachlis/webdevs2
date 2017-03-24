@@ -10,40 +10,100 @@
     .screen {
       display: none;
     }
+    .label{
+      padding-top: 50px;
+      padding-bottom: 10px;
+      font-size: 400%;
+      font-family: Helvetica;
+    }
+    body{
+      background-color: #ccf5ff;
+    }
+    paragraph{
+      padding-bottom: 50px;
+      font-size: 50%;
+      font-family: Helvetica;
+    }
   </style>
-  
+  <link rel="manifest" href="/manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <meta name="apple-mobile-web-app-status-bar-style" content="black">
+          <meta name="apple-mobile-web-app-title" content="Weather PWA">
+          <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+
   </head>
+  <title>Weather</title>
   <body>
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">Title</span>
+          <span class="mdl-layout-title">Weather</span>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="#">Link</a>
-            <a class="mdl-navigation__link" href="#">Link</a>
-            <a class="mdl-navigation__link" href="#">Link</a>
-            <a class="mdl-navigation__link" href="#">Link</a>
           </nav>
         </div>
       </header>
       <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Title</span>
+        <span class="mdl-layout-title">Weather</span>
         <nav class="mdl-navigation">
-          <a id="link1" class="mdl-navigation__link" href="#">Link 1</a>
-          <a id="link2" class="mdl-navigation__link" href="#">Link 2</a>
-          <a id="link3" class="mdl-navigation__link" href="#">Link 3</a>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a id="link1" class="mdl-navigation__link" href="#">Chicago</a>
+          <a id="link2" class="mdl-navigation__link" href="#">New York</a>
+          <a id="link3" class="mdl-navigation__link" href="#">Los Angeles</a>
         </nav>
       </div>
       <main class="mdl-layout__content">
-        <div id="screen1" class="screen page-content">Screen 1</div>
-        <div id="screen2" class="screen page-content">Screen 2</div>
-        <div id="screen3" class="screen page-content">Screen 3</div>
+        <div id="screen1" class="screen page-content"><center>
+          <h1 class="label">Chicago</h1>
+        <p id="paragraph">Chicago (Listeni/ʃᵻˈkɑːɡoʊ/ or /ʃᵻˈkɔːɡoʊ/), officially the City of Chicago, is the third-most populous city in the United States. With over 2.7 million residents, it is the most populous city in the state of Illinois, and the Midwestern United States. It is the county seat of Cook County. The Chicago metropolitan area, often referred to as Chicagoland, has nearly 10 million people and is the third-largest in the U.S.</p>
+        <br>
+        <br>
+        </center>
+        
+        <center><a href="https://www.accuweather.com/en/us/chicago-il/60608/current-weather/348308" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
+-->
+        </a><div id="awtd1490109155976" class="aw-widget-36hour"  data-locationkey="348308" data-unit="f" data-language="en-us" data-useip="false" data-uid="awtd1490109155976" data-editlocation="false"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script>
+        
+        </div></center>
+        
+        <div id="screen2" class="screen page-content"><center>
+          <h1 class="label">New York</h1>
+          <p1 id="paragraph">The City of New York, often called New York City or simply New York, is the most populous city in the United States. With an estimated 2015 population of 8,550,405 distributed over a land area of about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the state of New York, the city is the center of the New York metropolitan area, one of the most populous urban agglomerations in the world. A global power city, New York City exerts a significant impact upon commerce, finance, media, art, fashion, research, technology, education, and entertainment, its fast pace defining the term New York minute. Home to the headquarters of the United Nations, New York is an important center for international diplomacy and has been described as the cultural and financial capital of the world.</p1>
+          <br>
+          <br></center>
+        <center><a href="https://www.accuweather.com/en/us/new-york-ny/10007/current-weather/349727" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
+-->
+        </a><div id="awtd1490109305158" class="aw-widget-36hour"  data-locationkey="349727" data-unit="f" data-language="en-us" data-useip="false" data-uid="awtd1490109305158" data-editlocation="false"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script></center></center></div>
+        
+        
+        
+        
+        
+        
+        <div id="screen3" class="screen page-content"><center>
+          <h1 class="label">Los Angeles</h1>
+          <p1 id="paragraph">Los Angeles (Listeni/lɒs ˈændʒəlᵻs/, Spanish for "The Angels"; Spanish: [los 'an.xe.les]),[14] officially the City of Los Angeles and often known by its initials L.A., is the cultural, financial, and commercial center of Southern California. With a census-estimated 2015 population of 3,971,883, it is the second-most populous city in the United States (after New York City) and the most populous city in California. Located in a large coastal basin surrounded on three sides by mountains reaching up to and over 10,000 feet (3,000 m), Los Angeles covers an area of about 469 square miles (1,210 km2) The city is the focal point of the larger Los Angeles metropolitan area and the Greater Los Angeles Area region, which contain 13 million and over 18 million people, respectively, as of 2010, making it one of the most populous metropolitan areas in the world as well as the second-largest in the United States and the densest urban area in the United States. Los Angeles is also the seat of Los Angeles County, the most populated county in the United States. The city's inhabitants are referred to as Angelenos.
+          <br>
+          <br>
+
+</p1>
+          </center>
+        
+        <center><a href="https://www.accuweather.com/en/us/los-angeles-ca/90012/current-weather/347625" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at https://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at https://www.accuweather.com/en/privacy.
+-->
+</a><div id="awtd1490109477521" class="aw-widget-36hour"  data-locationkey="347625" data-unit="f" data-language="en-us" data-useip="false" data-uid="awtd1490109477521" data-editlocation="false"></div><script type="text/javascript" src="https://oap.accuweather.com/launch.js"></script></center>
+        
+        </div>
       </main>
     </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
